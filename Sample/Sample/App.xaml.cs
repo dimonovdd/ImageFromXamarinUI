@@ -1,5 +1,4 @@
 ﻿using System;
-using Sample.Xamarin.Forms.ViewToImage;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

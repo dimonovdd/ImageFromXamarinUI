@@ -123,7 +123,7 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <ItemGroup>
@@ -131,9 +131,9 @@
       <Project>{E3982452-E783-448F-B9CD-8246549F0D5F}</Project>
       <Name>Sample</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Sample.Xamarin.Forms.ViewToImage\Xamarin.Forms.ViewToImage.csproj">
-      <Project>{D4B822E2-80BE-4771-83E0-CF83B8D899D0}</Project>
-      <Name>Xamarin.Forms.ViewToImage</Name>
+    <ProjectReference Include="..\..\ImageFromXamarinUI\ImageFromXamarinUI.csproj">
+      <Project>{6E301B89-554A-46B7-A0BA-A892171F0A3C}</Project>
+      <Name>ImageFromXamarinUI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

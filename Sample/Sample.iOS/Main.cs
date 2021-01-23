@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using Sample.Xamarin.Forms.ViewToImage;
 using UIKit;
 
 namespace Sample.iOS
@@ -16,7 +15,6 @@ namespace Sample.iOS
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
             UIApplication.Main(args, null, "AppDelegate");
-            ViewExtension.Ios();
         }
     }
 }

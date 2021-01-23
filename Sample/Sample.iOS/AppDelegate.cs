@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using Sample.Xamarin.Forms.ViewToImage;
 using UIKit;
 
 namespace Sample.iOS
@@ -26,7 +25,6 @@ namespace Sample.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
-            ViewExtension.Ios();
             return base.FinishedLaunching(app, options);
         }
     }
