@@ -1,2 +1,2 @@
-# Xamarin.Forms.ViewToImage
-Converter From Xamarin.Forms.View To Image
+# ImageFromXamarinUI ![NuGet](https://img.shields.io/nuget/v/ImageFromXamarinUI?style=plastic)
+Extension methods for capturing images from UI
