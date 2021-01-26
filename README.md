@@ -7,11 +7,14 @@
 
 | Platform | Version |
 | --- | --- |
-| Android | MonoAndroid80 |
+| Android | MonoAndroid90+|
 | iOS | Xamarin.iOS10 |
 | .NET Standard | 2.0 |
 
 ## Getting started
+
+You can just watch the [Video](https://youtu.be/O9D3NSYh1t0) that [@jfversluis](https://github.com/jfversluis) published
+
 
 This is how you can create a simple command to call `CaptureImageAsync` method
 
