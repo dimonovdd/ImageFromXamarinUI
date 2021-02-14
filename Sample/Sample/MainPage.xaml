@@ -10,7 +10,7 @@
         <sample:MainViewModel />
     </ContentPage.BindingContext>
     <ScrollView >
-        <StackLayout Background="Red" >
+        <StackLayout Background="Green" >
             <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
                 <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
@@ -27,8 +27,11 @@
                 </Label.FormattedText>
             </Label>
 
-            <Button Text="Capture" Background="#990000ff" 
-                Command="{Binding CaptureCommand}" CommandParameter="{x:Reference rootView}"/>
+            <ContentView x:Name="button">
+                <Button Text="Capture" Background="#990000ff" Margin="10"
+                Command="{Binding CaptureCommand}" CommandParameter="{x:Reference button}"/>
+            </ContentView>
+            
 
             <Image Source="{Binding ResultImageSource}"/>
 

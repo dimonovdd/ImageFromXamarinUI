@@ -27,7 +27,7 @@ async void OnCapture(Xamarin.Forms.VisualElement element)
 {
     try
     {
-        var stream = await element.CaptureImageAsync();
+        var stream = await element.CaptureImageAsync(Color.White);
         ResultImageSource = ImageSource.FromStream(() => stream);
     }
     catch (Exception)

@@ -9,9 +9,9 @@ namespace ImageFromXamarinUI
 {
     public static partial class VisualElementExtension
     {
-        static async Task<Stream> PlatformCaptureImageAsync(VisualElement view)
+        static async Task<Stream> PlatformCaptureImageAsync(VisualElement view, Xamarin.Forms.Color backgroundColor)
         {
-            using var bitmap = ViewToBitMap(GetNativeView(view));
+            using var bitmap = ViewToBitMap(GetNativeView(view), backgroundColor);
             var stream = await BitMapToStream(bitmap);
             bitmap.Recycle();
             return stream;
@@ -27,11 +27,11 @@ namespace ImageFromXamarinUI
             return render.View;
         }
 
-        static Bitmap ViewToBitMap(Android.Views.View view)
+        static Bitmap ViewToBitMap(Android.Views.View view, Xamarin.Forms.Color backgroundColor)
         {
             var bitmap = Bitmap.CreateBitmap(view.Width, view.Height, Bitmap.Config.Argb8888);
             using var canvas = new Canvas(bitmap);
-            canvas.DrawColor(Android.Graphics.Color.Transparent);
+            canvas.DrawColor(backgroundColor.ToAndroid());
             view.Draw(canvas);
 
             return bitmap;

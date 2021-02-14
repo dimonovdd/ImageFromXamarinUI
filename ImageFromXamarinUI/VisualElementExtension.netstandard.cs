@@ -7,7 +7,7 @@ namespace ImageFromXamarinUI
 {
     public static partial class VisualElementExtension
     {
-        static Task<Stream> PlatformCaptureImageAsync(VisualElement view)
+        static Task<Stream> PlatformCaptureImageAsync(VisualElement view, Color backgroundColor)
                => throw new NotImplementedException($"{nameof(CaptureImageAsync)} not supported on netstandart project");
 
     }
