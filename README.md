@@ -32,7 +32,7 @@ async void OnCapture(Xamarin.Forms.VisualElement element)
     }
     catch (Exception)
     {
-        // Handle exception that share failed
+        // Handle exception
     }        
 }
  ```
