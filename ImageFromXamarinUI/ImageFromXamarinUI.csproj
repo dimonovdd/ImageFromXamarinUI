@@ -1,7 +1,7 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0;</TargetFrameworks>
-    <AssemblyName>Sample.Xamarin.Forms.ViewToImage</AssemblyName>
+    <AssemblyName>ImageFromXamarinUI</AssemblyName>
     <RootNamespace>ImageFromXamarinUI</RootNamespace>
     <PackageId>ImageFromXamarinUI</PackageId>
     <PackageIcon>icon.png</PackageIcon>
@@ -13,7 +13,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
     <Version>1.0.0</Version>
-    <PackageVersion>1.0.0-pre2</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <Authors>dimonovdd</Authors>
     <Owners>dimonovdd</Owners>
     <RepositoryUrl>https://github.com/dimonovdd/ImageFromXamarinUI</RepositoryUrl>
