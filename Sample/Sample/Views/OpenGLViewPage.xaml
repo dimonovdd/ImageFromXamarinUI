@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Sample.Views.OpenGLViewPage">
+
+    <ScrollView>
+        <Grid RowDefinitions="150,50,auto">
+
+            <OpenGLView x:Name="openGLView"
+                    VerticalOptions="FillAndExpand" />
+
+            <Button Grid.Row="2" Text="Capture" Clicked="OnCapture"/>
+
+            <Image Grid.Row="4" x:Name="resultImage"/>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

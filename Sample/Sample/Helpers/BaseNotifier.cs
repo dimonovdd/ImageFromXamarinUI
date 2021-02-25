@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms.Internals;
 
-namespace Sample
+namespace Sample.Helpers
 {
     public class BaseNotifier : INotifyPropertyChanged
     {

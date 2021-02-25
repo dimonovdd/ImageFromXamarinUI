@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:Sample.Models"
+    x:Class="Sample.Views.HomePage"
+    Title="Samples">
+
+    <ListView x:Name="samplesView"
+              ItemTapped="OnSampleTapped"
+              VerticalOptions="FillAndExpand"
+              HasUnevenRows="True">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell x:DataType="models:SampleItem">
+                    <Grid Padding="12,6" ColumnSpacing="6" RowSpacing="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding Name}"
+                               MaxLines="1"
+                               FontAttributes="Bold"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
