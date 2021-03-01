@@ -1,5 +1,5 @@
 ﻿using System;
-using ImageFromXamarinUI;
+using ImageFromXamarinUI.OpenGLView;
 using Sample.Helpers;
 using Xamarin.Forms;
 

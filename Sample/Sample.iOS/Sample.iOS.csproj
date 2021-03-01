@@ -136,6 +136,10 @@
       <Project>{6E301B89-554A-46B7-A0BA-A892171F0A3C}</Project>
       <Name>ImageFromXamarinUI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\ImageFromXamarinUI.OpenGLView\ImageFromXamarinUI.OpenGLView.csproj">
+      <Project>{688B5B52-55EC-4EDB-A5C8-6732F25290F0}</Project>
+      <Name>ImageFromXamarinUI.OpenGLView</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample\Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFromXamarinUI", "ImageFromXamarinUI\ImageFromXamarinUI.csproj", "{6E301B89-554A-46B7-A0BA-A892171F0A3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFromXamarinUI.OpenGLView", "ImageFromXamarinUI.OpenGLView\ImageFromXamarinUI.OpenGLView.csproj", "{688B5B52-55EC-4EDB-A5C8-6732F25290F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,18 @@ Global
 		{6E301B89-554A-46B7-A0BA-A892171F0A3C}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{6E301B89-554A-46B7-A0BA-A892171F0A3C}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{6E301B89-554A-46B7-A0BA-A892171F0A3C}.Release|iPhone.Build.0 = Release|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{688B5B52-55EC-4EDB-A5C8-6732F25290F0}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

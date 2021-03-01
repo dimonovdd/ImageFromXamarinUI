@@ -1,0 +1,61 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0;</TargetFrameworks>
+    <AssemblyName>ImageFromXamarinUI.OpenGLView</AssemblyName>
+    <RootNamespace>ImageFromXamarinUI.OpenGLView</RootNamespace>
+    <PackageId>ImageFromXamarinUI.OpenGLView</PackageId>
+    <PackageIcon>icon.png</PackageIcon>
+    <Summary>Extension methods for capturing images from OpenGLView</Summary>
+    <PackageTags>xamarin, ios, android, toolkit, xamarin.forms, image, ui, screenshot, OpenGLView, OpenGL</PackageTags>
+    <Title>ImageFromXamarinUI.OpenGLView</Title>
+    <Description>Extension methods for capturing images from OpenGLView</Description>
+    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>dimonovdd</Authors>
+    <Owners>dimonovdd</Owners>
+    <RepositoryUrl>https://github.com/dimonovdd/ImageFromXamarinUI</RepositoryUrl>
+    <PackageReleaseNotes>See: https://github.com/dimonovdd/ImageFromXamarinUI/releases</PackageReleaseNotes>
+    <DefineConstants>$(DefineConstants);</DefineConstants>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/dimonovdd/ImageFromXamarinUI</PackageProjectUrl>
+    <DebugType>portable</DebugType>
+    <Configurations>Debug;Release</Configurations>    
+    <LangVersion>8.0</LangVersion>
+ </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DocumentationFile>bin\Release\netstandard2.0\ImageFromXamarinUI.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE" PackagePath="" Pack="true" />
+    <None Include="..\icon.png" PackagePath="" Pack="true" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991864" />
+    <Compile Include="**\*.shared.cs" />
+    <Compile Include="**\*.shared.*.cs" />
+  </ItemGroup>
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+    <Compile Include="**\*.netstandard.cs" />
+    <Compile Include="**\*.netstandard.*.cs" />
+  </ItemGroup>
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+    <Compile Include="**\*.android.cs" />
+    <Compile Include="**\*.android.*.cs" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />    
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+    <Compile Include="**\*.ios.cs" />
+    <Compile Include="**\*.ios.*.cs" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+</Project>

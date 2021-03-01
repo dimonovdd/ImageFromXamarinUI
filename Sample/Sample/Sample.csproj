@@ -21,6 +21,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ImageFromXamarinUI\ImageFromXamarinUI.csproj" />
+    <ProjectReference Include="..\..\ImageFromXamarinUI.OpenGLView\ImageFromXamarinUI.OpenGLView.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
