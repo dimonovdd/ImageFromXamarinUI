@@ -1,4 +1,4 @@
-# ImageFromXamarinUI [![NuGet](https://img.shields.io/nuget/v/ImageFromXamarinUI?style=plastic)](https://www.nuget.org/packages/ImageFromXamarinUI/)
+# ImageFromXamarinUI [![NuGet Badge](https://img.shields.io/nuget/vpre/ImageFromXamarinUI)](https://www.nuget.org/packages/ImageFromXamarinUI/) [![NuGet downloads](https://img.shields.io/nuget/dt/ImageFromXamarinUI)](https://www.nuget.org/packages/ImageFromXamarinUI/) [![license](https://img.shields.io/github/license/dimonovdd/ImageFromXamarinUI)](https://github.com/dimonovdd/ImageFromXamarinUI/blob/main/LICENSE) [![ImageFromXamarinUI on fuget.org](https://www.fuget.org/packages/ImageFromXamarinUI/badge.svg)](https://www.fuget.org/packages/ImageFromXamarinUI)
 ### Extension methods for capturing images from UI
 
 ![header](/header.svg)
